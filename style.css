@@ -1,0 +1,87 @@
+:root {
+    --bg-color: #e0e0e0;   /* Off-white background */
+    --text-color: #000;    /* Black text */
+    --link-color: #282866; /* Lavender links */
+    --border-color: #9d9dcc;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Montserrat Regular", Montserrat, sans-serif; /* The classic dev font */
+    line-height: 1.5;
+    max-width: 700px; /* Readability constraint */
+    margin: 40px auto; /* Centers the content */
+    padding: 0 20px;
+}
+
+/* Typography */
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 5px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: var(--link-color);
+    color: var(--bg-color); /* Inverts colors on hover */
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+/* Lists */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+/* Divider */
+hr {
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 30px 0;
+}
+
+/* Footer */
+footer {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: 50px;
+}
+
+/* Mobile Tweaks */
+@media (max-width: 600px) {
+    body {
+        margin: 20px auto;
+    }
+}
