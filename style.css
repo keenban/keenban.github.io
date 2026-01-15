@@ -65,6 +65,10 @@ li {
     margin-bottom: 15px;
 }
 
+.example-list {
+    list-style-type: circle;
+}
+
 /* Divider */
 hr {
     border: 0;
