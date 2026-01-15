@@ -30,6 +30,14 @@ h2 {
     padding-bottom: 5px;
 }
 
+h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: light-dark(var(--secondary-dark), var(--secondary-light));
+}
+
 p {
     margin-bottom: 15px;
 }
