@@ -1,13 +1,14 @@
 :root {
-    --bg-color: #f0f0ff;
-    --text-color: #090933;
-    --link-color: #282866;
-    --border-color: #9d9dcc;
+    color-scheme: light dark;
+    --primary-light: #f0f0ff;
+    --primary-dark: #040418;
+    --secondary-light: #9d9dcc;
+    --secondary-dark: #282866;
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: light-dark(var(--primary-light), var(--primary-dark));
+    color: light-dark(var(--primary-dark), var(--primary-light));
     font-family: "Montserrat Regular", Montserrat, sans-serif;
     line-height: 1.5;
     max-width: 700px;
@@ -25,7 +26,7 @@ h2 {
     font-size: 1.2rem;
     margin-top: 40px;
     margin-bottom: 15px;
-    border-bottom: 1px dashed var(--border-color);
+    border-bottom: 1px dashed light-dark(var(--secondary-light), var(--secondary-dark));
     padding-bottom: 5px;
 }
 
@@ -35,14 +36,14 @@ p {
 
 /* Links */
 a {
-    color: var(--link-color);
+    color: light-dark(var(--secondary-dark), var(--secondary-light));
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-    background-color: var(--link-color);
-    color: var(--bg-color); /* Inverts colors on hover */
+    background-color: light-dark(var(--secondary-dark), var(--secondary-light));
+    color: light-dark(var(--primary-light), var(--primary-dark)); /* Inverts colors on hover */
 }
 
 /* Navigation */
@@ -72,7 +73,7 @@ li {
 /* Divider */
 hr {
     border: 0;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid light-dark(var(--secondary-light), var(--secondary-dark));
     margin: 30px 0;
 }
 
